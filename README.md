@@ -23,7 +23,15 @@ The aim of the project was to create a table similar to the kanban tool, which i
 ![NPM](https://img.shields.io/badge/NPM-CB3837?style=for-the-badge&logo=npm&logoColor=white)
 
 ## Installation and configuration
-The project uses node and npm. Having them installed, type into the terminal: npm i.
+The project uses [node](https://nodejs.org/en/) and [npm](https://www.npmjs.com/), follow the steps below to be able to use the application.
+- Install all npm packages using command:
+````
+npm i
+````
+- To start develope mode use command:
+````
+npm start
+````
 
 ## Author
 Linkedin - [Katarzyna Panz](https://www.linkedin.com/in/katarzyna-panz-584399228/)
