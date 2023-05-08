@@ -1,5 +1,13 @@
 import React from 'react';
-
+import {
+    StyledTitle,
+    FieldContainer,
+    StyledDiv,
+    StyledParagraph,
+    FieldName,
+    StyledInput,
+    StyledSumbitInput,
+} from '../src/style/StyledElements';
 
 // eslint-disable-next-line react/prefer-stateless-function
 class Form extends React.Component {
@@ -9,38 +17,50 @@ class Form extends React.Component {
         const { add, clearForm } = this.props;
         add();
         // clearForm();
-    };;
+    };
 
     inputChange = (e) => {
         // eslint-disable-next-line react/prop-types
         const { change } = this.props;
         const { name, value } = e.target;
         change(name, value);
-    }
+    };
 
     render() {
         const { taskId, taskIdColumn, taskName, taskUser } = this.props;
         return (
             <section>
-                <form onSubmit={this.submitHandler}>
-                    <label>
-                        Numer zadania:
-                        <input name="id" value={taskId} onChange={this.inputChange} />
-                    </label>
-                    <label>
-                        Nazwa zadania:
-                        <input name="name" value={taskName} onChange={this.inputChange} />
-                    </label>
-                    <label>
-                        Id kolumny:
-                        <input name="idColumn" value={taskIdColumn} onChange={this.inputChange} />
-                    </label>
-                    <label>
-                        Imię użytkownika:
-                        <input name="user" value={taskUser} onChange={this.inputChange} />
-                    </label>
-                    <input type="submit" />
-                </form>
+                <div>
+                    <StyledTitle>Kanban board</StyledTitle>
+                </div>
+                <StyledDiv>
+                    <form onSubmit={this.submitHandler}>
+                        <div>
+                            <StyledParagraph>Add new task:</StyledParagraph>
+                        </div>
+                        <FieldContainer>
+                            <FieldName>Task number:</FieldName>
+                            <StyledInput name="id" value={taskId} onChange={this.inputChange} />
+                        </FieldContainer>
+                        <FieldContainer>
+                            <FieldName>Task name:</FieldName>
+                            <StyledInput name="name" value={taskName} onChange={this.inputChange} />
+                        </FieldContainer>
+                        <FieldContainer>
+                            <FieldName>Column id:</FieldName>
+                            <StyledInput
+                                name="idColumn"
+                                value={taskIdColumn}
+                                onChange={this.inputChange}
+                            />
+                        </FieldContainer>
+                        <FieldContainer>
+                            <FieldName>User name:</FieldName>
+                            <StyledInput name="user" value={taskUser} onChange={this.inputChange} />
+                        </FieldContainer>
+                        <StyledSumbitInput type="submit" value="Add" />
+                    </form>
+                </StyledDiv>
             </section>
         );
     }

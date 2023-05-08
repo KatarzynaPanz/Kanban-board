@@ -9,7 +9,7 @@ function Board(props) {
     return (
         <section style={{ display: 'flex' }}>
             {columns.map((el) => (
-                <Column id={el.id} name={el.name} limit={el.limit} tasks={tasks} />
+                <Column id={el.id} name={el.name} limit={el.limit} color={el.color} tasks={tasks} />
             ))}
         </section>
     );

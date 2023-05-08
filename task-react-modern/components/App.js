@@ -2,6 +2,8 @@ import React, { useState, useEffect, useContext } from 'react';
 import Board from './Board';
 import Form from './Form';
 import { TaskContext, ColumnContext } from '../src/context';
+import ResetStyle from '../src/style/Reset';
+import GlobalStyle from '../src/style/Global';
 
 function App() {
     const [form, setForm] = useState({
@@ -13,13 +15,13 @@ function App() {
 
     // eslint-disable-next-line react/jsx-no-constructed-context-values
     const columns = [
-        { id: 1, name: 'Pending', limit: 6 },
-        { id: 2, name: 'Analysis - doing', limit: 3 },
-        { id: 3, name: 'Analysis - done', limit: 3 },
-        { id: 4, name: 'Development - doing', limit: 5 },
-        { id: 5, name: 'Development - done', limit: 5 },
-        { id: 6, name: 'Test', limit: 3 },
-        { id: 7, name: 'Deploy', limit: 5 },
+        { id: 1, name: 'Pending', limit: 6, color: '#99FFCC' },
+        { id: 2, name: 'Analysis - doing', limit: 3, color: '#FFCCCC' },
+        { id: 3, name: 'Analysis - done', limit: 3, color: '#66FF66' },
+        { id: 4, name: 'Development - doing', limit: 5, color: '#FF9933 ' },
+        { id: 5, name: 'Development - done', limit: 5, color: '#CCCCCC' },
+        { id: 6, name: 'Test', limit: 3, color: '#FFFF66' },
+        { id: 7, name: 'Deploy', limit: 5, color: '#CCFF66' },
     ];
 
     // eslint-disable-next-line consistent-return
@@ -75,7 +77,7 @@ function App() {
         ) {
             setTasks([...tasks, form]);
         } else {
-            // eslint-disable-next-line no-alert
+            // eslint-disable-next-line no-alert, no-undef
             alert('W kolumnie jest max zadań!');
         }
     };
@@ -102,7 +104,7 @@ function App() {
             }
             setTasks(currTasks);
         } else {
-            // eslint-disable-next-line no-alert
+            // eslint-disable-next-line no-alert, no-undef
             alert('W następnej kolumnie jest max zadań!');
         }
     };
@@ -123,13 +125,15 @@ function App() {
             }
             setTasks(currTasks);
         } else {
-            // eslint-disable-next-line no-alert
+            // eslint-disable-next-line no-alert, no-undef
             alert('W poprzedniej kolumnie jest max zadań!');
         }
     };
 
     return (
         <>
+            <ResetStyle />
+            <GlobalStyle />
             <Form change={inputChange} add={addTask} />
             <ColumnContext.Provider value={{ columns }}>
                 <TaskContext.Provider value={{ moveTask, removeTask, undoTask }}>
