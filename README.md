@@ -1,41 +1,40 @@
-> :dart: *Chcę mieć absolutną pewność, że **darmowe materiały**, które publikuję, spełniają Twoje oczekiwania. Dlatego oferuję Ci ebooka o wartości 39 PLN: `Jak zostać programistą? SKUTECZNY PRZEWODNIK` w zamian za [wypełnienie ankiety](https://devmentor.pl/ankieta).*
+# KANBAN - table
 
-&nbsp;
+## About project
+The aim of the project was to create a table similar to the kanban tool, which is used to make a visualization of workflow. The possibility to track every task was also prepared. In the project functional components, hooks and context were used.
 
-# React: Nowoczesny
+## Features
+1. A validated form created to add new tasks (contains: task name, task number, column id, user name)
+2. A table with specified columns and tasks limit
+3. Tasks management
+  - moving tasks between columns 
+  - deleting tasks
+  - saving tasks in Local Storage
 
-React ciągle się rozwija i usprawnia swoje działanie. Poznawanie nowych, lepszych rozwiązań jest częścią pracy programisty. Dzięki zadaniom z tego repozytorium sprawdzisz, czy znasz odpowiednie narzędzia oraz czy potrafisz wykorzystywać nowe, wygodne rozwiązania dostępne w Reakcie.
+## Technologies
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Redux](https://img.shields.io/badge/-Redux-black?style=for-the-badge&logo=Redux&logoColor=pink)
+![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![Webpack](https://img.shields.io/badge/Webpack-8DD6F9?style=for-the-badge&logo=Webpack&logoColor=white)
+![Babel](https://img.shields.io/badge/Babel-F9DC3E?style=for-the-badge&logo=babel&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.JS-339933?style=for-the-badge&logo=Node.js&logoColor=white)
+![NPM](https://img.shields.io/badge/NPM-CB3837?style=for-the-badge&logo=npm&logoColor=white)
 
-Przed przystąpieniem do zadań powinieneś poznać:
+## Installation and configuration
+The project uses [node](https://nodejs.org/en/) and [npm](https://www.npmjs.com/), follow the steps below to be able to use the application.
+- Install all npm packages using command:
+````
+npm i
+````
+- To start develope mode use command:
+````
+npm start
+````
 
-- narzędzia typu ESLint oraz Prettier
-- Context API, które ułatwia komunikację komponentów
-- hooks, czyli nowe rozwiązania, które pozwalają wykorzystywać funkcjonalność znaną z komponentów klasowych w komponentach funkcyjnych.
+## Author
+Linkedin - [Katarzyna Panz](https://www.linkedin.com/in/katarzyna-panz-584399228/)
 
-&nbsp;
-
-## Zadania
-
-&nbsp;
-
-### :point_right: &nbsp; [`#01`](./01) &nbsp; [`#02`](./02) &nbsp; [`#03`](./03) &nbsp; [`#04`](./04) &nbsp; [`#05`](./05) &nbsp; :point_left:
-
-&nbsp;
-
-:arrow_left: [*poprzedni zestaw zadań **(React: Kompozycja**)*](https://github.com/devmentor-pl/practice-react-composition)
-
-&nbsp;
-
-## Jak prawidłowo wykonać zadania?
-
-Najpierw zrób tzw. [`fork`](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/fork-a-repo) (prawy, górny róg strony). W ten sposób utworzysz kopię tego repozytorium na Twoim koncie GitHub. 
-
-Teraz będziesz mógł wykonywać zadania na swoim repozytorium. Wystarczy, że skopiujesz pliki na swój komputer przy pomocy komendy [`git clone`](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository).
-
-Zadania rozwiązuj jedno po drugim, ponieważ z każdym kolejnym ich poziom trudności wzrasta.  
-
-Pamiętaj o zapisywaniu historii zmian w plikach przy pomocy komend [`git add`](https://github.com/git-guides/git-add) oraz [`git commit`](https://github.com/git-guides/git-commit).
-
-Aby wysłać dane na zdalny serwer, wystarczy komenda [`git push`](https://github.com/git-guides/git-push).
-
-Po wysłaniu plików na GitHuba zrób [Pull Request](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork), abym mógł wykonać [Code Review](https://en.wikipedia.org/wiki/Code_review) Twoich zadań.
+## Special thanks
+Thanks to my [Mentor - devmentor.pl](https://devmentor.pl/) – for providing me with this task and for code review.
