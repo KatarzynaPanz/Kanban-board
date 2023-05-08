@@ -1,5 +1,9 @@
 # KANBAN - table
 
+
+https://user-images.githubusercontent.com/91606497/236922228-59582735-356d-4500-903b-a6b0a4172600.mp4
+
+
 ## About project
 The aim of the project was to create a table similar to the kanban tool, which is used to make a visualization of workflow. The possibility to track every task was also prepared. In the project functional components, hooks and context were used.
 
